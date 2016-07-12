@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.password">88Sd7Fbaya6q</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/wells</property>
+    <property name="hibernate.connection.username">adminlyEVm6U</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="connection.pool_size">1</property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">validate</property>
+    <mapping class="com.connectcard.domain.City"/>
+    <mapping class="com.connectcard.domain.Matchup"/>
+    <mapping class="com.connectcard.domain.Team"/>
+    <mapping class="com.connectcard.domain.Bet"/>
+    <mapping class="com.connectcard.domain.Schdule"/>
+        <mapping class="com.connectcard.domain.StadiumDetails"/>    
+  </session-factory>
+</hibernate-configuration>
+<!-- Mapping files -->

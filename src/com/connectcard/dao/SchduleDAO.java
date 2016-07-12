@@ -1,0 +1,36 @@
+package com.connectcard.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+
+import com.connectcard.domain.Matchup;
+import com.connectcard.domain.Schdule;;
+
+public interface SchduleDAO {
+    /**
+     * This method gets an initiated SimpleJdbcTemplate
+     * @return a SimpleJdbcTemplate
+     */
+    public SimpleJdbcTemplate getSimpleJdbcTemplateCity();
+    
+    
+    /**
+     * Save all Lines to the Database
+     * @param matchups the code of the state 
+     */
+    public Long saveMatchups(ArrayList<Schdule> matchups);
+    
+    public Long saveMatcups(Schdule[] matchups);
+
+    public List<Matchup> getMatchups();
+	
+    public List<Matchup> getMatchupsByGameId(short week);
+    
+    
+    
+    
+    
+    
+  }

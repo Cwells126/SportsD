@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-catalog="wells" match-name="BET" />
+	<table-filter match-catalog="wells" match-name="BET_Q" />
+	<table-filter match-catalog="wells" match-name="TEAM" />
+	<table-filter match-catalog="wells" match-name="USER" />
+	<table catalog="wells" name="TEAM">
+		<column name="ID_TEAM"></column>
+		<column name="TEAM_NM"></column>
+	</table>
+	<table catalog="wells" name="USER">
+		<column name="ID_USER"></column>
+		<column name="USER_NM"></column>
+		<column name="EMAIL"></column>
+		<column name="PASSWORD"></column>
+		<column name="CREATE_TIME"></column>
+	</table>
+	<table catalog="wells" name="BET">
+		<column name="BET"></column>
+		<column name="AMOUNT"></column>
+		<column name="BET_DT"></column>
+		<column name="ID_MATCHUP"></column>
+		<column name="USER1_PK"></column>
+		<column name="USER2_PK"></column>
+		<column name="BET_Q_ID"></column>
+	</table>
+	<table catalog="wells" name="BET_Q">
+		<column name="ID_BET_Q"></column>
+		<column name="ID_MATCHUP"></column>
+		<column name="AMT_BET"></column>
+		<column name="BET_PICK"></column>
+		<column name="ID_USER"></column>
+	</table>
+</hibernate-reverse-engineering>

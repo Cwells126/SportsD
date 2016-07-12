@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+
+/*Marketing Container*/
+#marketing {
+	width: 950px;
+	height: 290px;
+	margin: 5px auto 0 auto;
+	overflow: hidden;
+	padding: 5px;
+	background: #e3e3e3;	
+}
+#marketing .jcarousel-container-horizontal {
+    width: 950px;
+	height: 290px;
+    margin: 0;
+	padding: 0;
+	background: #e3e3e3;
+}
+#marketing .jcarousel-clip-horizontal, #marketing .jcarousel-item {
+    width: 950px;
+	height: 290px;
+	margin: 0;
+	padding: 0;
+}
+
+#marketing .jcarousel-next-horizontal {
+	position: absolute;
+	top: 125px;
+	right: 10px;
+    background: url(../images/arrowr.gif) no-repeat top;
+	display: block;
+	width: 16px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 4;
+}
+#marketing .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 125px;
+	left: 10px;
+    background: url(../images/arrowl.gif) no-repeat top;
+	display: block;
+	width: 16px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 4;
+}
+#marketing .topcontainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    background: url(../images/marketing-container-top.gif) no-repeat top;
+	width: 960px;
+	height: 9px;
+	z-index: 2;
+}
+#marketing .bottomcontainer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+    background: url(../images/marketing-container-bottom.gif) no-repeat top;
+	width: 960px;
+	height: 9px;
+	z-index: 3;
+}
+#marketing  img {border: none; width: 950px; height: 290px;}
+/*Marketing Container*/
+
+#sports-container {
+	margin-top: 10px;
+	border: 1px solid #e9e7e7;
+	background: #f7f7f7;
+	overflow: hidden;
+	width: 948px;
+	padding: 5px;
+}
+#sports-container #sidebar {
+	width: 198px;
+	float: left;
+}
+#sports-container #sidebar img {
+	margin-top: 5px;
+	border: none;
+}
+#sports-container #sidebar a {
+	background: url(../images/bg-title-sportsbook.jpg) repeat-x;
+	width: 168px;
+	height: 26px;
+	padding-left: 30px;
+	font: bold 13px/26px Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	letter-spacing: 1;
+}
+#sports-container #sidebar .submenu  {
+	border: 1px solid #acacac;
+	background: #fff;
+	display: none;
+}
+#sports-container #sidebar .submenu a {
+	background: url(../images/sportsbook-submenu.jpg) no-repeat 5px center;
+	width: 176px;
+	height: 24px;
+	padding-left: 20px;
+	font: bold 11px/24px Arial, Helvetica, sans-serif;
+	color: #737373;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	letter-spacing: 0;
+	border-bottom: #e0e0e0 1px dotted;
+}
+
+#sports-container #sidebar a img {
+	margin: 0 10px 0 0;
+	float: right;
+}
+#sports-container #info {
+	width: 730px;
+	float: right;
+}
+/*Sportsbook Generic CSS*/
+label {
+	margin-left: 15px;
+}
+p.powered-by {
+	margin: 5px 15px 5px 15px;
+	color: #062366;
+}
+#info ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#info ul li.trend {
+	padding: 15px 20px 20px 20px;
+	font: 12px/14px Arial, Helvetica, sans-serif;
+	border-bottom: #dbdada 1px dotted;
+	background: #fff;
+}
+li.trend a {
+	color: #c00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* GAMELINES STYLES */	
+.linesTable TR.leagueDate{padding: 5px 10px; background: #3B5998; font-weight: bold; color: #ffffff;}
+.gameline {
+	/*margin: 0px 15px 20px 15px;*/
+	margin: 5px 0 0;*/
+	font: 12px/14px Arial, Helvetica, sans-serif;
+}
+
+.linesTable TD{ vertical-align: middle; padding: 5px 10px;}
+.linesTable TR.headers{background: #D8E1F5; text-align: center; font-size: 10px; color: #444546; font-weight:bold;}
+.linesTable TR.odd{background: #fff;}
+.linesTable TR.even{background: #f2f2f2;}
+.linesTable{border: 1px solid #cccccc; border-collapse:collapse;}
+.linesTable TD{border: 1px solid #cccccc;}
+.period_0{}
+.period_1{display: none;}
+/* GAMELINES STYLES END */
